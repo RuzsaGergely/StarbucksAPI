@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarbucksBalance.MainPage">
+
+    <StackLayout>
+        <Frame BackgroundColor="#F2F0EB" Padding="10" CornerRadius="0">
+            <Image Source="sblogo.png" HorizontalOptions="Center" WidthRequest="50"/>
+        </Frame>
+
+        <Label x:Name="greeting_field" HorizontalTextAlignment="Center" FontSize="Title" Padding="0,110,0,0"/>
+        <Label Text="Az aktuálisan elérhető Starbucks Rewards egyenleged:" HorizontalTextAlignment="Center" Padding="0,30,0,0"/>
+        <Label x:Name="balance_field" Text="? Ft" HorizontalTextAlignment="Center" FontSize="50"/>
+
+        <Label Text="Az eddigi összegyűjtött csillagjaid:" HorizontalTextAlignment="Center" Padding="0,50,0,0"/>
+        <Label x:Name="star_field" Text="? db" HorizontalTextAlignment="Center" FontSize="50"/>
+
+        <ImageButton Source="cogwheel.png"
+                    HorizontalOptions="Start"
+                    VerticalOptions="EndAndExpand" HeightRequest="30" BackgroundColor="Transparent" Padding="10,0,0,10" Clicked="OnSettingsButtonClicked"/>
+    </StackLayout>
+
+</ContentPage>

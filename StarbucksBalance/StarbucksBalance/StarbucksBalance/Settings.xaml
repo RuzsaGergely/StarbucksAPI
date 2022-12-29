@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StarbucksBalance.Settings">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Az alábbi mezőben add meg a saját Starbucks API szervered cimét:"
+                 FontSize="Body" Padding="10,20,0,0" HorizontalOptions="CenterAndExpand"/>
+            <Entry x:Name="addressField" Placeholder="https://123.123.123.123:18100"/>
+            <Button Text="Mentés"
+                HorizontalOptions="Center"
+                Clicked="OnSaveButtonClicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
